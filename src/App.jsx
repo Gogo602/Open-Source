@@ -1,10 +1,17 @@
 import React from "react";
 import Home from "./Pages/Home";
+import { Route, Routes } from "react-router-dom";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 
 const App = () => {
   return (
-    <div className='flex items-center justify-center h-screen text-blue-500 text-3xl font-bold'>
-      <Home />
+    <div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Register />} />
+      </Routes>
     </div>
   );
 };
