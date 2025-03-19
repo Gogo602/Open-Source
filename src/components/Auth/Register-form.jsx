@@ -15,7 +15,7 @@ export function RegisterForm({ className, ...props }) {
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
         <CardHeader>
-          <CardTitle>Login to your account</CardTitle>
+          <CardTitle>Create an account with us.</CardTitle>
           <CardDescription>
             Enter your details below to create an account
           </CardDescription>
